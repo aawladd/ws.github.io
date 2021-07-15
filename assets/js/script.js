@@ -14,3 +14,16 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+
+// MultiLinks
+
+var myLinks =[
+    "http://youtube.com/FunctionalValue/",
+    "https://drive.google.com/drive/folders/17mJJx7O2zMar5tAnfQ8fEwGYao0n0Mf1?usp=sharing"
+]
+
+function openMultipleLinks(links){
+    for(var i = 0; i<links.length; i++){
+        window.open(links[i])
+    }
+}
